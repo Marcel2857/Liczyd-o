@@ -1,0 +1,90 @@
+html {
+  height: 100%;
+  font-family: "Share Tech Mono", monospace;
+  background-color: rgb(17, 235, 224);
+}
+
+.all {
+  font-size: 28px;
+  display: flex;
+  padding-top: 200px;
+  justify-content: center;
+}
+
+.bracket {
+  height: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: transparent;
+  border-radius: 3px;
+}
+
+.part-1 {
+  padding-left: 100px;
+}
+
+.part-2 {
+  padding-left: 100px;
+}
+
+.remaining {
+  display: flex;
+  justify-content: center;
+  padding-top: 70px;
+  font-size: 28px;
+}
+
+.button {
+  height: 37px;
+  background-color: transparent;
+  border-radius: 3px;
+  transition: transform 0.3s;
+}
+
+.button:hover {
+  transform: scale(1.1);
+}
+
+.added-item {
+  font-family: "Share Tech Mono", monospace;
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+.total-expenses,
+.total-incomes {
+  font-family: "Share Tech Mono", monospace;
+  font-size: 20px;
+  padding-top: 20px;
+}
+
+.remaining-budget {
+  font-family: "Share Tech Mono", monospace;
+}
+
+.edit,
+.cancel {
+  height: 37px;
+  background-color: transparent;
+  border-radius: 3px;
+  transition: transform 0.3s;
+  margin-left: 10px;
+}
+
+.edit:hover {
+  transform: scale(1.1);
+}
+
+.cancel:hover {
+  transform: scale(1.1);
+}
+
+.second-bracket {
+  height: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: transparent;
+  border-radius: 3px;
+  margin-left: 15px;
+  margin-right: 15px;
+}

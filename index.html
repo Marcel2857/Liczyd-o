@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Liczydło</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="all">
+      <div class="part-1">
+        <h2 class="incomes">Przychody</h2>
+        <form id="income-form">
+          <input
+            type="text"
+            name="incomeTitle"
+            minlength="5"
+            placeholder="Nazwa przychodu"
+            class="bracket"
+          />
+          <input
+            type="number"
+            name="incomeAmount"
+            placeholder="Ilość"
+            class="bracket"
+          />
+          <button type="submit" class="button">Dodaj</button>
+        </form>
+        <ul id="incomes-list"></ul>
+        <div id="total-incomes" class="total-incomes"></div>
+      </div>
+
+      <div class="part-2">
+        <h2>Wydatki</h2>
+        <form id="expense-form">
+          <input
+            type="text"
+            name="expenseTitle"
+            minlength="5"
+            placeholder="Nazwa wydatku"
+            class="bracket"
+          />
+          <input
+            type="number"
+            name="expenseAmount"
+            placeholder="Ilość"
+            class="bracket"
+          />
+          <button type="submit" class="button">Dodaj</button>
+        </form>
+        <ul id="expenses-list"></ul>
+
+        <div id="total-expenses" class="total-expenses"></div>
+      </div>
+    </section>
+    <div class="remaining">
+      <h2>Pozostałe środki:</h2>
+      <div id="remaining-budget" class="remaining-budget"></div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
