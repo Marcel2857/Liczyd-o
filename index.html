@@ -13,7 +13,7 @@
           <input
             type="text"
             name="incomeTitle"
-            minlength="5"
+            required
             placeholder="Nazwa przychodu"
             class="bracket"
           />
@@ -22,6 +22,8 @@
             name="incomeAmount"
             placeholder="Ilość"
             class="bracket"
+            min="0.00"
+            step="0.01"
           />
           <button type="submit" class="button">Dodaj</button>
         </form>
@@ -35,7 +37,7 @@
           <input
             type="text"
             name="expenseTitle"
-            minlength="5"
+            required
             placeholder="Nazwa wydatku"
             class="bracket"
           />
@@ -44,6 +46,8 @@
             name="expenseAmount"
             placeholder="Ilość"
             class="bracket"
+            min="0.00"
+            step="0.01"
           />
           <button type="submit" class="button">Dodaj</button>
         </form>
