@@ -19,11 +19,7 @@ html {
   border-radius: 3px;
 }
 
-.part-1 {
-  padding-left: 100px;
-}
-
-.part-2 {
+.inputs {
   padding-left: 100px;
 }
 
@@ -71,20 +67,15 @@ html {
   margin-left: 10px;
 }
 
-.edit:hover {
-  transform: scale(1.1);
-}
-
+.edit:hover,
 .cancel:hover {
   transform: scale(1.1);
 }
 
 .second-bracket {
   height: 30px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 20px 15px;
   background-color: transparent;
   border-radius: 3px;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin: 20px 0;
 }

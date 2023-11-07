@@ -50,17 +50,11 @@ function editIncome(income, item) {
   saveButton.classList.add("button");
   saveButton.addEventListener("click", () => {
     const incomeToEdit = incomes.find((item) => item.id === income.id);
-    const incomesToEdit = incomes.find((item) => item.id === income.id);
-    if (titleInput.value.length >= 1) {
+    if (titleInput.value.trim() !== "" && amountInput.value >= 0.01) {
       incomeToEdit.title = titleInput.value;
-    } else alert("Pole z nazwą nie może byc puste");
-    if (amountInput.value.length >= 0.01) {
-      incomesToEdit.value = amountInput.value;
-    } else alert("Pole z ilością nie może być puste");
-
-    incomeToEdit.title = titleInput.value;
-    incomeToEdit.amount = Number(amountInput.value).toFixed(2);
-    updateIncomes();
+      incomeToEdit.amount = Number(amountInput.value).toFixed(2);
+      updateIncomes();
+    } else alert("Żadne z pól nie może pozostać puste");
   });
   const cancelButton = document.createElement("button");
   cancelButton.textContent = "Anuluj";
@@ -122,15 +116,11 @@ function editExpense(expense, item) {
   saveButton.classList.add("button");
   saveButton.addEventListener("click", () => {
     const expenseToEdit = expenses.find((item) => item.id === expense.id);
-    if (titleInput.value.length >= 1) {
+    if (titleInput.value.trim() !== "" && amountInput.value >= 0.01) {
       expenseToEdit.title = titleInput.value;
-    } else alert("Pole z nazwą nie może byc puste");
-    if (amountInput.value.length >= 0.01) {
-      expenseToEdit.value = amountInput.value;
-    } else alert("Pole z ilością nie może być puste");
-    expenseToEdit.title = titleInput.value;
-    expenseToEdit.amount = amountInput.value;
-    updateExpenses();
+      expenseToEdit.amount = Number(amountInput.value).toFixed(2);
+      updateExpenses();
+    } else alert("Żadne z pól nie może pozostać puste");
   });
   const cancelButton = document.createElement("button");
   cancelButton.textContent = "Anuluj";
