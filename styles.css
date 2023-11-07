@@ -48,7 +48,8 @@ html {
 }
 
 .total-expenses,
-.total-incomes {
+.total-incomes,
+.added-item {
   font-family: "Share Tech Mono", monospace;
   font-size: 20px;
   padding-top: 20px;
